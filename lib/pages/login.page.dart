@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'dart:developer';
 
 class LoginPage extends StatelessWidget {
   @override
@@ -48,6 +49,71 @@ class LoginPage extends StatelessWidget {
                 ),
               ),
               style: TextStyle(fontSize: 20),
+            ),
+            Container(
+              height: 40,
+              alignment: Alignment.centerRight,
+              child: TextButton(
+                // autofocus: true,
+                style: ButtonStyle(
+                  foregroundColor:
+                      MaterialStateProperty.all<Color>(Colors.blue),
+                ),
+                onPressed: () {},
+                child: Text('Recuperar senha'),
+              ),
+            ),
+            SizedBox(
+              height: 40,
+            ),
+            Container(
+              height: 60,
+              alignment: Alignment.centerLeft,
+              decoration: BoxDecoration(
+                gradient: LinearGradient(
+                  begin: Alignment.topLeft,
+                  end: Alignment.bottomRight,
+                  stops: [0.2, 1.1],
+                  colors: [
+                    Color(0xfff58524),
+                    Color(0xfff92b7f),
+                  ],
+                ),
+                borderRadius: BorderRadius.all(
+                  Radius.circular(6),
+                ),
+              ),
+              child: SizedBox.expand(
+                // expand all area Container parent
+
+                child: TextButton(
+                  //  autofocus: true,
+                  onPressed: () => {},
+                  style: ButtonStyle(
+                    foregroundColor:
+                        MaterialStateProperty.all<Color>(Colors.white),
+                  ),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: <Widget>[
+                      Text(
+                        "Login",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 20,
+                        ),
+                      ),
+                      Container(
+                        child: SizedBox(
+                          child: Image.asset("assets/bone.png"),
+                          width: 28,
+                          height: 28,
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
             ),
           ],
         ),
