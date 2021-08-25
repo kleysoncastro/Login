@@ -8,7 +8,7 @@ class LoginPage extends StatelessWidget {
       body: Container(
         color: Colors.white,
         padding: EdgeInsets.only(
-          top: 60,
+          top: 40,
           left: 40,
           right: 40,
         ),
@@ -20,7 +20,7 @@ class LoginPage extends StatelessWidget {
               child: Image.asset('assets/logo.png'),
             ),
             SizedBox(
-              height: 20,
+              height: 16,
             ),
             TextFormField(
               keyboardType: TextInputType.emailAddress,
@@ -32,10 +32,12 @@ class LoginPage extends StatelessWidget {
                   fontSize: 20,
                 ),
               ),
-              style: TextStyle(fontSize: 20),
+              style: TextStyle(
+                fontSize: 20,
+              ),
             ),
             SizedBox(
-              height: 20,
+              height: 16,
             ),
             TextFormField(
               keyboardType: TextInputType.text,
@@ -48,7 +50,9 @@ class LoginPage extends StatelessWidget {
                   fontSize: 20,
                 ),
               ),
-              style: TextStyle(fontSize: 20),
+              style: TextStyle(
+                fontSize: 20,
+              ),
             ),
             Container(
               height: 40,
@@ -64,7 +68,7 @@ class LoginPage extends StatelessWidget {
               ),
             ),
             SizedBox(
-              height: 40,
+              height: 16,
             ),
             Container(
               height: 60,
@@ -112,6 +116,53 @@ class LoginPage extends StatelessWidget {
                       ),
                     ],
                   ),
+                ),
+              ),
+            ),
+            SizedBox(
+              height: 16,
+            ),
+            Container(
+              height: 60,
+              alignment: Alignment.centerLeft,
+              decoration: BoxDecoration(
+                color: Color(0xff3c5a99),
+                borderRadius: BorderRadius.all(
+                  Radius.circular(6),
+                ),
+              ),
+              child: SizedBox.expand(
+                child: TextButton(
+                  onPressed: () => {},
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: <Widget>[
+                      Text(
+                        "Entre com FaceBook",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 20,
+                        ),
+                      ),
+                      Container(
+                        child: SizedBox(
+                          child: Image.asset("assets/fb-icon.png"),
+                          width: 28,
+                          height: 28,
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+            ),
+            Container(
+              height: 40,
+              child: TextButton(
+                onPressed: () => {},
+                child: Text(
+                  "SignUp",
+                  textAlign: TextAlign.center,
                 ),
               ),
             ),
