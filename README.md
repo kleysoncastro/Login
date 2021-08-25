@@ -7,5 +7,5 @@
 
 #### telas da aplicação
 
-<img align="center" width="1200" height="700" src="https://github.com/kleysoncastro/imagem/blob/master/doglife.png">
+<img align="center" width="700" height="1080" src="https://github.com/kleysoncastro/imagem/blob/master/doglife.png">
 
